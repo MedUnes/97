@@ -31,7 +31,7 @@ were "weird" mutations might happen. Functional programming radically solves thi
 * Trap N.3: Do not lose your time "forcing" users do something your way, they will always use their "weird" ways.
 
 
-### 3- Automate Your Coding Standard (Filip van Laenen)
+### 4- Automate Your Coding Standard (Filip van Laenen)
 
 * There are mature and widely accepted tools which guarantee coding standards and most of those boring repetitive tasks
 aimed to keeping the codebase at a minimal standard.
