@@ -11,16 +11,16 @@
 
 [![Author](https://img.shields.io/badge/author-@medunes-blue.svg?style=flat-square)](https://twitter.com/medunes2)
 
-### Act with prudence (Seb Rose)
+### 1- Act with prudence (Seb Rose)
 * Whenever you implment solutions introducing technical debts, make sure you keep track of that. 
 * Once done, estimate the cost of this tech-debt and include it in your "pricing"
 
-### Apply Functional Programming Principles (Edward Garson)
+### 2- Apply Functional Programming Principles (Edward Garson)
 * Always fight for pure functions: functions which do not mutate data
 * OOP design patterns, principles and best practices (for instance TDD) try to reduce the number of **random** context
 were "weird" mutations might happen. Functional programming radically solves this problem.
 
-### Ask, “What Would the User Do?” (You Are Not the User) (Giles Kolborne) ++
+### 3- Ask, “What Would the User Do?” (You Are Not the User) (Giles Kolborne) ++
 
 * Users think differently than programmers: this is a fact
 * A good approach to "explore" their minds is to ask them to perform simple tasks ** in a non-technical words**
@@ -31,7 +31,7 @@ were "weird" mutations might happen. Functional programming radically solves thi
 * Trap N.3: Do not lose your time "forcing" users do something your way, they will always use their "weird" ways.
 
 
-### Automate Your Coding Standard (Filip van Laenen)
+### 3- Automate Your Coding Standard (Filip van Laenen)
 
 * There are mature and widely accepted tools which guarantee coding standards and most of those boring repetitive tasks
 aimed to keeping the codebase at a minimal standard.
