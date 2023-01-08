@@ -135,4 +135,4 @@ critical team conflicts..
 > don’t ask  an object for information to work with. Instead, ask the object to do the
 work with the information it already has. 
 > In other words, encapsulation is
-all—and only—about narrow interfaces.om Technical (Dan Bergh Johnsson)](#21) :+1:
+all—and only—about narrow interfaces.om Technical (Dan Bergh Johnsson)] :+1:
