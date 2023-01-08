@@ -12,7 +12,7 @@
 
 ## Symbols:
 
-:+1: /  :+1::+1: /  :+1: :+1: :+1:  represent how much I learnt from that particular point (and this is purely personal)
+:+1: /  :+1::+1: /  :+1: :+1: :+1:  represent how much I learned from that particular point (and this is purely personal)
 ### [1- Act with prudence (Seb Rose)](#1)
 * Whenever you implement solutions introducing technical debts, make sure you keep track of that. 
 * Once done, estimate the cost of this tech-debt and include it in your "pricing"
@@ -135,4 +135,4 @@ critical team conflicts..
 > don’t ask  an object for information to work with. Instead, ask the object to do the
 work with the information it already has. 
 > In other words, encapsulation is
-all—and only—about narrow interfaces.om Technical (Dan Bergh Johnsson)] :+1:
+all—and only—about narrow interfaces.om Technical (Dan Bergh Johnsson) :+1:
