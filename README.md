@@ -87,7 +87,7 @@ cost and time what would have been achieved by humans.
 locked version of other tools.
 * A good remedy for this is to leverage the [Dependency Inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle) from SOLID.
 
-### [Code in the  Language of  the Domain  (Dan North)](#11) :+1:
+### [11- Code in the  Language of  the Domain  (Dan North)](#11) :+1:
 * Leverage what the development eco-system grants you (latin letters, git commits, function and class names, JIRA links)
 * Your ultimate goal is to reduce the technical jargon and increase the business one
 * If technical low level implementation details have to be written the hardcode way (and they must at some point), try 
