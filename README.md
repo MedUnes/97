@@ -10,6 +10,9 @@
 
 [![Author](https://img.shields.io/badge/author-@medunes-blue.svg?style=flat-square)](https://twitter.com/medunes2)
 
+## Symbols:
+
+:+1: /  :+1::+1: /  :+1: :+1: :+1:  represent how much I learnt from that particular point (and this is purely personal)
 ### [1- Act with prudence (Seb Rose)](#1)
 * Whenever you implement solutions introducing technical debts, make sure you keep track of that. 
 * Once done, estimate the cost of this tech-debt and include it in your "pricing"
@@ -75,3 +78,61 @@ yours. And as assumptions are usually out of questioning, they might take you ag
 surroundings.
 * Remember Sherlock Holmes’s advice: 
 >"Once you eliminate the impossible, whatever remains, no matter how improbable, must be the truth."
+
+### [10- Choose your tools with care (Giovanni Asproni)](#10) :+1:
+* Yes, buying existing software might be cheaper and more reliable than hiring humans to create them.
+* However, combining the bought software with each-other might require hacks and workarounds which could bypass in 
+cost and time what would have been achieved by humans.
+* Two more bad news for you: free tools have licenses (think GPL), and they also can make you doomed to a specific 
+locked version of other tools.
+* A good remedy for this is to leverage the [Dependency Inversion principle](https://en.wikipedia.org/wiki/Dependency_inversion_principle) from SOLID.
+
+### [Code in the  Language of  the Domain  (Dan North)](#11) :+1:
+* Leverage what the development eco-system grants you (latin letters, git commits, function and class names, JIRA links)
+* Your ultimate goal is to reduce the technical jargon and increase the business one
+* If technical low level implementation details have to be written the hardcode way (and they must at some point), try 
+to put them in the lowest hidden level so that access them is "optional" and "on-demand" Do not make it the entrypoint!
+>The programmer who comes along a few months later to work on the code will thank you.
+>The programmer who comes along a few months later might be you.
+
+### [12- Code Is Design  (Ryan Brush)](#12) :+1: :+1:
+* The trickiest trap behind the so called *software crisis* is that software often involves zeo material costs.
+* This fact creates an illusion that we can re-create a better version, free of cost whenever a previous version wasn't
+good enough, or even failed.
+* The urge for competitiveness and be first in the market insanely fuels this rush and ends up with frustrating series
+of collapse stories.
+* The rule of thumb here is to put the emphasis on two pillars:
+  * Robust automated test suites
+  * Skilled and gifted code designers
+>great designs are produced by great designers dedicating themselves to
+>the mastery of their craft. Code is no different.
+
+### [13- Code Layout Matters  (Steve Freeman)](#13) :+1:
+
+* Our eyes (perception system) and our mind (brain) are crucial factors which -behind the scenes- are the real judges to
+tell whether some piece of code is clean or nasty.
+  * **Perception**: Our window to "the world" is the IDE's screen. Struggle that every single pixel of it participates in 
+  communicating information about the code in the most *cohesive* way
+  * **Mind**: conditions, if statements, inconsistent code styles, having to switch between files.. All these factors
+  are building a "state machine" or a "pending stack" for the mind while analyzing the code. This thing is our public
+  enemy number one that makes us feel uncomfortable while scanning code. We should reduce this stack to the minimum to
+  free up resources for our minds and let them focus on one direction
+
+### [14- Code Reviews  (Mathias Karlsson)](#14) :+1:
+* Unless strictly required by some compliance rules, code review should be peer to peer rather than superior to peers.
+* The reviewer's goal should be "understand the committed code and the coder's intention" rather than spotting issues.
+* The ultimate keyword for code reviews is **knowledge sharing**. Remember that, always, please!
+* Set up a diverse strategy where juniors review based on their academic and fresh theoretical background, while seniors
+review from their experience and pragmatic perspective. This ensures knowledge-sharing, enthusiasm and smoothness for 
+all participants
+* Avoid aggressive, arrogant and sarcastic comments. Use suggestions, questions, arguments instead.
+* Watch-out: a general failure in the code-review process can have severe impact on productivity, or even trigger more
+critical team conflicts..
+
+### [15- Coding with Reason  (Yechiel Kimchi)](#15) :+1:
+
+* Several widely agreed best practices in software engineering turn around 
+> don’t ask  an object for information to work with. Instead, ask the object to do the
+work with the information it already has. 
+> In other words, encapsulation is
+all—and only—about narrow interfaces.om Technical (Dan Bergh Johnsson)](#21) :+1:
