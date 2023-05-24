@@ -10,9 +10,21 @@
 
 [![Author](https://img.shields.io/badge/author-@medunes-blue.svg?style=flat-square)](https://twitter.com/medunes2)
 
-## Symbols:
+## What is it?
+* These are my **own** notes/thoughts/annotations on the very famous book "97 Things Every Programmer Should Know".
+* I did it for three purposes:
+    * Summarize that valuable information in a more packed size so that I can refer to it and re-read it more often
+    * Merge the books information with my own information that I gathered from other sources
+    * Share it with people
 
-:+1: /  :+1::+1: /  :+1: :+1: :+1:  represent how much I learned from that particular point (and this is purely personal)
+## Symbols/Typography:
+
+* :+1: /  :+1::+1: /  :+1: :+1: :+1:  represent how much I learned from that particular point (and this is purely personal)
+* In case I copy/paste the the authors words, I list them quoted:
+> like this
+
+## The Notes
+
 ### [1- Act with prudence (Seb Rose)](#1)
 * Whenever you implement solutions introducing technical debts, make sure you keep track of that. 
 * Once done, estimate the cost of this tech-debt and include it in your "pricing"
