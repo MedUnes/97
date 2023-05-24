@@ -27,7 +27,7 @@ where "weird" mutations might happen. Functional programming radically solves th
 * Users think differently than programmers: this is a fact
 * A good approach to "explore" their minds is to ask them to perform simple tasks **in non-technical words**
 [*User Story*? ] (ex:calculate the expenses), and watch how they do them.
-* Usually, the majority of users will turn around a core behavior, this is your takeaway.
+* Usually, the majority of users will turn around a core behavior, this is your takeaway, and there you go.
 * Trap N.1: Avoid discussions where the topic is "so we suppose the users should do this and that"
 * Trap N.2: Watch out what users say they need, only trust what users "truly" need by watching them.
 * Trap N.3: Do not lose your time "forcing" users do something your way, they will always use their "weird" ways.
