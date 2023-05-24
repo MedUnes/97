@@ -47,7 +47,7 @@ pipelines for faster incorporation in all projects.
 
 ### [5- Beauty Is in Simplicity (Jørn Ølmheim)](#5)
 * Simplicity relates to code beauty which is a subjective topic.
-* We might agree on the principle of beauty through credibility principle: you can learn beautiful code design by reading
+* We might agree on the principle of: *beauty through credibility* principle: you can learn beautiful code design by reading
 into well-known accepted leaders of the domain.
 
 ### [6- Before You Refactor (Rajith Attapattu)](#6) :+1:
