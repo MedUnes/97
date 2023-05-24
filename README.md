@@ -96,7 +96,7 @@ to put them in the lowest hidden level so that access them is "optional" and "on
 >The programmer who comes along a few months later might be you.
 
 ### [12- Code Is Design  (Ryan Brush)](#12) :+1: :+1:
-* The trickiest trap behind the so called *software crisis* is that software often involves zeo material costs.
+* The trickiest trap behind the so called *software crisis* is that software often involves zero material costs.
 * This fact creates an illusion that we can re-create a better version, free of cost whenever a previous version wasn't
 good enough, or even failed.
 * The urge for competitiveness and be first in the market insanely fuels this rush and ends up with frustrating series
