@@ -134,4 +134,4 @@ critical team conflicts..
 * Several widely agreed best practices in software engineering end up to turn around the following quote:
 > don’t ask  an object for information to work with. Instead, ask the object to do the
 work with the information it already has. 
-> In other words, encapsulation is all — and only — about narrow interfaces. :+1:
+> In other words, encapsulation is all — and only — about narrow interfaces.
