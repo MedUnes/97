@@ -20,7 +20,7 @@
 ### [2- Apply Functional Programming Principles (Edward Garson)](#2) :+1: :+1:
 * Always fight for pure functions: functions which do not mutate data
 * OOP design patterns, principles and best practices (for instance TDD) try to reduce the number of **random** context
-were "weird" mutations might happen. Functional programming radically solves this problem.
+where "weird" mutations might happen. Functional programming radically solves this problem.
 
 ### [3- Ask, “What Would the User Do?” (You Are Not the User) (Giles Kolborne)](#3) :+1:
 
