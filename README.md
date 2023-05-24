@@ -56,7 +56,7 @@ into well-known accepted leaders of the domain.
 * A production code includes ages of work-arounds, bug-fixes and subtle business logic, so watch out while touching!
 * Subjective personal choices souldn't be **alone** a reason for refactoring.
 * Tests are a treasure of knowledge: pay attention to what they try to verify before refactoring!
-* A new technology would be a reason for rewrite if and only if a significant improvements in
+* A new technology would be a reason for rewrite if and only if significant improvements in
   functionality, maintainability, or productivity is required and most likely to happen.
 ### [7- Beware the Share (Udi Dahan)](#7)
 * This is IMHO a rephrasal of the [Liskov principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle).
