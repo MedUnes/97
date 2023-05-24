@@ -25,7 +25,7 @@ where "weird" mutations might happen. Functional programming radically solves th
 ### [3- Ask, “What Would the User Do?” (You Are Not the User) (Giles Kolborne)](#3) :+1:
 
 * Users think differently than programmers: this is a fact
-* A good approach to "explore" their minds is to ask them to perform simple tasks ** in a non-technical words**
+* A good approach to "explore" their minds is to ask them to perform simple tasks **in non-technical words**
 [*User Story*? ] (ex:calculate the expenses), and watch how they do them.
 * Usually all or almost all users turn around a core behavior, this is your takeaway.
 * Trap N.1: Avoid discussions where the topic is "so we suppose the users should do this and that"
