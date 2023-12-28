@@ -1,5 +1,5 @@
 <h1 align="center">
-    Notes on book: "97 Things Every Programmer Should Know"<br>
+    Notes on book: "97 Things Every Programmer Should Know" (A.K.A The annotated 97)<br>
 </h1>
 
 <div align="center">
@@ -140,10 +140,47 @@ all participants
 * Avoid aggressive, arrogant and sarcastic comments. Use suggestions, questions, arguments instead.
 * Watch-out: a general failure in the code-review process can have severe impact on productivity, or even trigger more
 critical team conflicts..
+### [15- Code Reviews  (Mathias Karlsson)](#14) :+1:
+* Unless strictly required by some compliance rules, code review should be peer to peer rather than superior to peers.
+* The reviewer's goal should be "understand the committed code and the coder's intention" rather than spotting issues.
+* The ultimate keyword for code reviews is **knowledge sharing**. Remember that, always, please!
+* Set up a diverse strategy where juniors review based on their academic and fresh theoretical background, while seniors
+review from their experience and pragmatic perspective. This ensures knowledge-sharing, enthusiasm and smoothness for 
+all participants
+* Avoid aggressive, arrogant and sarcastic comments. Use suggestions, questions, arguments instead.
+* Watch-out: a general failure in the code-review process can have severe impact on productivity, or even trigger more
+critical team conflicts..
+### [16- A comment on comments  (Cal Events)](#16) :+1: :+1:
+* Comments are not evil, they are very welcome, they are first class citizens in the world of programming.
+* Do not surrender to indoctrinations of the notoriety of comments. Use them as much as you want as long as you keep explaining your code to yourself and to future programmers coming across it.
+* This might sound like a "devil's advocate PoV", if you are do belong to the "clean code" team. The two quotes below are very clear about this:
+> Sprinkle your code with relevant comments explaining what the code is supposed to accomplish. - *Cal Events* 
 
-### [15- Coding with Reason  (Yechiel Kimchi)](#15) :+1:
+> The proper use of comments is to compensate for our failure to express ourself in code. Note that I used the word failure. I meant it. Comments are always failures. - *Uncle Bob*
 
-* Several widely agreed best practices in software engineering end up to turn around the following quote:
-> don’t ask  an object for information to work with. Instead, ask the object to do the
-work with the information it already has. 
-> In other words, encapsulation is all — and only — about narrow interfaces.
+### [17- Comment only what the code cannot say  (Kevlin Henney)](#17) :+1:
+* Unless literally deleted, comments are non-refactorable tech debt and kind of resident flaws that nor compilers neither linters can fix.
+* Oppposed to what they were meant to be useful for, comments won't communicate more info for two reasons:
+  * The developer's mind flags them as "ambiguous" then systematically puts them under "ignored crap".
+  * They can be replcaed by dedicated tools (VCS, real code, and yes: DEL key)
+* Write comments if, and only if, you can't replace them by real code. (A rephrasal of "Comment the *why*, not the *what*)
+  > Comment what the code cannot say,not simply what it does not say.
+
+### [18- Continous Learning (Clint Shank)](#18) :+1:
+* Continous learning is good, in software engineering is a must, else you risk your job as the change is fast and the competition is high.
+* There are two styles of learning: passive (blogs, mentors, conferences) and active (teaching, coding, blogging)
+* A good way to stand out from the crowd, is to dig deeper and deeper your favourite tech-stack, debug and read the source code, up to the point it becomes naked and the magic fades away. The more magic it looks like, the more learning you need.
+
+### [19- Convenience Is Not an -ility (Gregor Hohpe)](#19) :+1:
+* API is composed of two parts: *"Application Programming"* and *"Interface"*. Your focus should be balanced towards the second part.
+* What makes API different from "normal code" it is built to be used by other programmers in other programs.
+* You should opt for code that is self-explanatory, optimally without the documentation. Repetition and couple more lines of code shouldn't be a problem in favor of a better DX (Developer Eperience).
+* In this context, if you face a trade-off situtation of convenience vs efficiency, convenience vs consistency, or convenience vs elegance, go convenience!
+* Take your time, writing an API is like raising a child, you don't usually get a second chance for it.
+
+### [20- Deploy Early and Often (Steve Berczuk)](#20) :+1:
+* Deployable production environment should come first and certainly not last.
+* Releasing to production is not a magic that "those devops" bring to life over night. It should be a part of the development task itself including estimation, refinement, planning, and testing.
+* Progressing for a long time on the local environment without any iterations on the production one can end up with bad surprises.
+* Sometimes it is too late to fix deep code issues caused by accumulated wrong assumptions about the non-ready production.
+* If someone argues about the business value of a production environment preparation, just tell them that the business value only runs on production.
