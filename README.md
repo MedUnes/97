@@ -224,6 +224,6 @@ critical team conflicts..
 * There might be situtations when you can trade off DRY for more crucial requirements such as performance and scaling (data redundancy through DB denormalization). The need must be real so that the trade-off makes sense.
 * However, IMHO, the DRY principle might be in some situations under double check, specially when we oppose it to other principles such as [The rule of three](https://lnkd.in/d_adjtj2) or the *"Duplication is far cheaper than the wrong abstraction"* principle. Briefly said, DRY will require some kind of abstraction under which the duplication hides, and abstraction requires a certain level of accuracy and expertise so that it can handle the repeated cases without the need to handle missing ones with nasty conditions. There is no free lunch!
 
-### 26 Don’t Touch That Code! (Cal Evans) :+1:
+### 27 Don’t Touch That Code! (Cal Evans) :+1:
 * Developers should **NEVER** do any manual change on any environment except their local ones. Moreover, they shoud never have  access to production servers, including the situtations where a very urgent hotfix is required.
 * IMHO, this rule is good to follow, no doubt. However, it comes with costs and needs dedicated manpower and resources, and many companies and startups can't afford that luxury and keep relying on grey areas and shared responsibilities. When you have a big enough company, fine grained responsibilities and stricter border lines are the very welcome.
