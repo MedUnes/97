@@ -189,7 +189,7 @@ critical team conflicts..
 * Ignoring errors under known developers excuses (tough deadline, it won't happen, To Do..) can lead to:
   * Security Issues (the error state is the entrypoint)
   * Ugly code to shut up the error
-* IMHO, there should be a pre-agreed minimum level, below which errors can be "safely" ignored, something like the [RFC5424]. (https://datatracker.ietf.org/doc/html/rfc5424)
+* IMHO, there should be a pre-agreed minimum level, below which errors can be "safely" ignored, something like the [RFC5424](https://datatracker.ietf.org/doc/html/rfc5424)
 * *Don't Ignore That Error* was IMHO mentioned in this quote from the [Zen of Python](https://peps.python.org/pep-0020/#the-zen-of-python)
   > Errors should never pass silently.
   > Unless explicitly silenced.
@@ -216,14 +216,26 @@ critical team conflicts..
 * Don’t Repeat Yourself (DRY) is probably the most fundamental of all fundamental programming rules.
 * We know the **S****O**LID principles. There would be no **S**ingle Responsibility Principle without *DRY*, as duplication will definitely lead to more than one cause to change the code unit. There would also be no **O**pen/Closed principle without *DRY*, as duplication will force any module to be open for modifications.
 * There might be situtations when you can trade off DRY for more crucial requirements such as performance and scaling (data redundancy through DB denormalization). The need must be real so that the trade-off makes sense.
-* However, IMHO, the DRY principle might be in some situations under double check, specially when we oppose it to other principles such as [The rule of three](https://lnkd.in/d_adjtj2) or the *"Duplication is far cheaper than the wrong abstraction"* principle. Briefly said, DRY will require some kind of abstraction under which the duplication hides, and abstraction requires a certain level of accuracy and expertise so that it can handle the repeated cases without the need to handle missing ones with nasty conditions. There is no free lunch!
-
-### 26 Don’t Repeat Yourself (Steve Smith) :+1: :+1:
-* Don’t Repeat Yourself (DRY) is probably the most fundamental of all fundamental programming rules.
-* We know the **S****O**LID principles. There would be no **S**ingle Responsibility Principle without *DRY*, as duplication will definitely lead to more than one cause to change the code unit. There would also be no **O**pen/Closed principle without *DRY*, as duplication will force any module to be open for modifications.
-* There might be situtations when you can trade off DRY for more crucial requirements such as performance and scaling (data redundancy through DB denormalization). The need must be real so that the trade-off makes sense.
-* However, IMHO, the DRY principle might be in some situations under double check, specially when we oppose it to other principles such as [The rule of three](https://lnkd.in/d_adjtj2) or the *"Duplication is far cheaper than the wrong abstraction"* principle. Briefly said, DRY will require some kind of abstraction under which the duplication hides, and abstraction requires a certain level of accuracy and expertise so that it can handle the repeated cases without the need to handle missing ones with nasty conditions. There is no free lunch!
+* However, IMHO, the DRY principle might be in some situations under double check, specially when we oppose it to other principles such as [The rule of three](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)) or the *"Duplication is far cheaper than the wrong abstraction"* principle. Briefly said, DRY will require some kind of abstraction under which the duplication hides, and abstraction requires a certain level of accuracy and expertise so that it can handle the repeated cases without the need to handle missing ones with nasty conditions. There is no free lunch!
 
 ### 27 Don’t Touch That Code! (Cal Evans) :+1:
-* Developers should **NEVER** do any manual change on any environment except their local ones. Moreover, they shoud never have  access to production servers, including the situtations where a very urgent hotfix is required.
-* IMHO, this rule is good to follow, no doubt. However, it comes with costs and needs dedicated manpower and resources, and many companies and startups can't afford that luxury and keep relying on grey areas and shared responsibilities. When you have a big enough company, fine grained responsibilities and stricter border lines are the very welcome.
+* Developers should **NEVER** do any manual changes on any environment except their local ones. Moreover, they should never have access to production servers, even in situations where a very urgent hotfix is required.
+* This rule is good to follow, no doubt. However, IMHO, it comes with costs and needs dedicated manpower and resources, and many companies/startups can't afford that luxury and keep relying on grey areas and shared responsibilities. It is when you grow to big enough company that fine grained responsibilities and stricter border lines are the very welcome.
+
+### 27 Encapsulate Behavior, Not Just State (Einar Landre) :+1:
+
+"Object Zero" (~ Coke Zero) is the trend nowadays, yet, Einar Landre warns us that combining logic and state changes in the same class isn't bad, but rather the standard.  He literally wrote:
+
+> the objects are plain and simple, but not dumb
+
+Objects can change their own states (and should be able to). Foreign classes must communicate through those methods, after all, they constitute its actual interface. This is what Martin Fowler defends in his "Tell don't ask" principle [Tell don't ask](https://martinfowler.com/bliki/TellDontAsk.html)
+
+* IMHO, couple arguments might oppose this principle:
+
+ - Rigidity and tight coupling violating the Open/Closed principle
+ - Fragility if deep inheritance comes into play
+ - Harder unit test developer experience
+ - ORM issues due to eventual "unexpected internal state changes"
+ - Eventual concurrency challenges, also due to internal state change.
+
+* A possible compromise, would be the following: keep using dumb `struct` like *POXO* objects, yet, implement encapsulated "services" which know how to validate, mutate and utilize those simple objects the right way.
