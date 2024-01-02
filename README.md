@@ -12,7 +12,7 @@
 
 ## What is it?
 * These are my **own** notes/thoughts/annotations on the very famous book "97 Things Every Programmer Should Know".
-* I did it for three purposes:
+* I did it for three main purposes:
     * Summarize that valuable information in a more packed size so that I can refer to it and re-read it more often
     * Merge the books information with my own information that I gathered from other sources
     * Share it with people
@@ -22,8 +22,12 @@
 * :+1: /  :+1::+1: /  :+1: :+1: :+1:  represent how much I learned from that particular point (and this is purely personal)
 * In case I copy/paste the the authors words, I list them quoted:
 > like this
+* If the note is not a summary, but rather my own opinion, I format it like this:
+  
+> [!tip]  
+> IMHO this point has potential flaws because ..
 
-## The Notes
+## My Notes
 
 ### 1- Act with prudence (Seb Rose)
 * Whenever you implement solutions introducing technical debts, make sure you keep track of that. 
@@ -71,7 +75,10 @@ into well-known accepted leaders of the domain.
 * A new technology would be a reason for rewrite if and only if significant improvements in
   functionality, maintainability, or productivity is required and most likely to happen.
 ### 7- Beware the Share (Udi Dahan)
-* This is IMHO a rephrasal of the [Liskov principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle).
+
+> [!tip]  
+> This is a rephrasal of the [Liskov principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle).
+
 * In few words, DRY principle which might imply packing and reusing some code blocks, should take into consideration the
 **context** and the expected evolution trajectory of the implementation.
 
@@ -189,9 +196,14 @@ critical team conflicts..
 * Ignoring errors under known developers excuses (tough deadline, it won't happen, To Do..) can lead to:
   * Security Issues (the error state is the entrypoint)
   * Ugly code to shut up the error
-* IMHO, there should be a pre-agreed minimum level, below which errors can be "safely" ignored, something like the [RFC5424](https://datatracker.ietf.org/doc/html/rfc5424)
-* *Don't Ignore That Error* was IMHO mentioned in this quote from the [Zen of Python](https://peps.python.org/pep-0020/#the-zen-of-python)
+    
+> [!tip]  
+> * there should be a pre-agreed minimum level, below which errors can be "safely" ignored, something like the [RFC5424](https://datatracker.ietf.org/doc/html/rfc5424)
+> [!tip]  
+> * *Don't Ignore That Error* is so similar to this [Zen of Python](https://peps.python.org/pep-0020/#the-zen-of-python):
+  
   > Errors should never pass silently.
+
   > Unless explicitly silenced.
 
 ### 22 Don’t Just Learn the Language, Understand Its Culture (Anders Norås) :+1:
@@ -205,34 +217,52 @@ critical team conflicts..
 * Write consistent and useful error handlers or avoid that thing completely. Doing it wrong will make you suffer twice: fixing the error handler and fix the error.
 
 ### 24 Don’t Rely on “Magic Happens Here” (Alan Griffiths) :+1:
-* The word *magic* here is, IMHO, a good example of the Clarke's third law
+> [!tip]  
+> * The word *magic* here is a good example of the Clarke's third law
+
   >  Any sufficiently advanced technology is indistinguishable from magic (Clarke)
+    
 * The IT industry has a very large landscape and is getting only larger. Therefore having experts in the smallest part of it is inevitable. However we shouldn't reach the point where expert in domain A sees domain B as magic, or vice-versa.
 * No matter how much different both domains are, each expert is very encouraged to gather minimum knowledge from other domains so that it doesn't look like magic anymore for him.
-* How much is minimum? good question! IMHO, if you are able to imagine approximative causes of eventual failures on the foreign domain, you already know the minimum. A developer supposing "low server memory" as root cause for a "Redis server down" passed the magic test. Similarly if a product manager thinks *unit tests* might have caused recent bugs of the last release. It is obviously not the case if a frontend developer thinks the build is "something" that happens to their source code making it small, fast written in some Devops programming language.
+
+> [!tip]  
+> * How much is minimum? good question! if you are able to imagine approximative causes of eventual failures on the foreign domain, you already know the minimum. A developer supposing "low server memory" as root cause for a "Redis server down" passed the magic test. Similarly if a product manager thinks *unit tests* might have caused recent bugs of the last release. It is obviously not the case if a frontend developer thinks the build is "something" that happens to their source code making it small, fast written in some Devops programming language.
+
   >  You don’t have to understand all the magic that makes your project work, but it doesn’t hurt to understand some of it— or to appreciate someone who understands the bits you don’t.
 
 ### 25 Don’t Repeat Yourself (Steve Smith) :+1: :+1:
 * Don’t Repeat Yourself (DRY) is probably the most fundamental of all fundamental programming rules.
 * We know the **S****O**LID principles. There would be no **S**ingle Responsibility Principle without *DRY*, as duplication will definitely lead to more than one cause to change the code unit. There would also be no **O**pen/Closed principle without *DRY*, as duplication will force any module to be open for modifications.
 * There might be situtations when you can trade off DRY for more crucial requirements such as performance and scaling (data redundancy through DB denormalization). The need must be real so that the trade-off makes sense.
-* However, IMHO, the DRY principle might be in some situations under double check, specially when we oppose it to other principles such as [The rule of three](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)) or the *"Duplication is far cheaper than the wrong abstraction"* principle. Briefly said, DRY will require some kind of abstraction under which the duplication hides, and abstraction requires a certain level of accuracy and expertise so that it can handle the repeated cases without the need to handle missing ones with nasty conditions. There is no free lunch!
+> [!tip]  
+> * However, the DRY principle might be in some situations under double check, specially when we oppose it to other principles such as [The rule of three](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)) or the *"Duplication is far cheaper than the wrong abstraction"* principle. Briefly said, DRY will require some kind of abstraction under which the duplication hides, and abstraction requires a certain level of accuracy and expertise so that it can handle the repeated cases without the need to handle missing ones with nasty conditions. There is no free lunch!
 
 ### 27 Don’t Touch That Code! (Cal Evans) :+1:
 * Developers should **NEVER** do any manual changes on any environment except their local ones. Moreover, they should never have access to production servers, even in situations where a very urgent hotfix is required.
-* This rule is good to follow, no doubt. However, IMHO, it comes with costs and needs dedicated manpower and resources, and many companies/startups can't afford that luxury and keep relying on grey areas and shared responsibilities. It is when you grow to big enough company that fine grained responsibilities and stricter border lines are the very welcome.
+> [!tip]  
+> * This rule is good to follow, no doubt. However, it comes with costs and needs dedicated manpower and resources, and many companies/startups can't afford that luxury and keep relying on grey areas and shared responsibilities. It is when you grow to big enough company that fine grained responsibilities and stricter border lines are the very welcome.
 
-### 27 Encapsulate Behavior, Not Just State (Einar Landre) :+1:
+### 27 Encapsulate Behavior, Not Just State (Einar Landre) :+1: :+1:
 
 * "Object Zero" (~ Coke Zero) is the trend nowadays, yet, Einar Landre warns us that combining logic and state changes in the same class isn't bad, but rather the standard.  He literally wrote:
   
 > the objects are plain and simple, but not dumb
 * Objects can change their own states (and should be able to). Foreign classes must communicate through those methods, after all, they constitute its actual interface. This is what Martin Fowler defends in his [Tell don't ask principle](https://martinfowler.com/bliki/TellDontAsk.html)
 
-* IMHO, couple arguments might oppose this principle:
-    * Rigidity and tight coupling violating the Open/Closed principle
-    * Fragility if deep inheritance comes into play
-    * Harder unit test developer experience
-    * ORM issues due to eventual "unexpected internal state changes"
-    * Eventual concurrency challenges, also due to internal state change.
-* A possible compromise, would be the following: keep using dumb `struct` like *POXO* objects, yet, implement encapsulated "services" which know how to validate, mutate and utilize those simple objects the right way.
+> [!tip]  
+> Couple arguments might oppose this principle:
+>  * Rigidity and tight coupling violating the Open/Closed principle
+>  * Fragility if deep inheritance comes into play
+>  * Harder unit test developer experience
+>  * ORM issues due to eventual "unexpected internal state changes"
+>  * Eventual concurrency challenges, also due to internal state change.
+
+> [!tip]  
+> A possible compromise, would be the following: keep using dumb `struct` like *POXO* objects, yet, implement encapsulated "services" which know how to validate, mutate and utilize those simple objects the right way.
+
+### 28 Floating-Point Numbers Aren’t Real (Chuck Allison) :+1: :+1: :+1:
+* *infinitesimal* is an abstract math concept that doesn't exist in the machine's world. The "smallest" unit is known as the *machine epsilon* defined by: ```ɛ = 2^(1-p), where p is the precision (24 for float, 53 for double)```
+* Keeping this in mind is important when trying to find an acceptable small enough value for equations, else you'll loop forver in vain!
+* Another trap, konw as the **smearing problem** happens when the difference in scale between the numbers is too great, the smaller number might not affect the total at all. This can lead to inaccuracies in calculations where you expect these small additions to make a difference. the floating point representation can't accurately capture the small change, and over time, these inaccuracies accumulate and might diverge to infinity.
+* As these errors might be devastating in contexts such as finance, it makes always sense to rely on dedicated decimal classes almost every popular programming language has. Even if your own implementations might be more effecient:
+> efficiency is worthless without accuracy.
