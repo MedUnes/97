@@ -224,18 +224,15 @@ critical team conflicts..
 
 ### 27 Encapsulate Behavior, Not Just State (Einar Landre) :+1:
 
-"Object Zero" (~ Coke Zero) is the trend nowadays, yet, Einar Landre warns us that combining logic and state changes in the same class isn't bad, but rather the standard.  He literally wrote:
-
+* "Object Zero" (~ Coke Zero) is the trend nowadays, yet, Einar Landre warns us that combining logic and state changes in the same class isn't bad, but rather the standard.  He literally wrote:
+  
 > the objects are plain and simple, but not dumb
-
-Objects can change their own states (and should be able to). Foreign classes must communicate through those methods, after all, they constitute its actual interface. This is what Martin Fowler defends in his "Tell don't ask" principle [Tell don't ask](https://martinfowler.com/bliki/TellDontAsk.html)
+* Objects can change their own states (and should be able to). Foreign classes must communicate through those methods, after all, they constitute its actual interface. This is what Martin Fowler defends in his [Tell don't ask principle](https://martinfowler.com/bliki/TellDontAsk.html)
 
 * IMHO, couple arguments might oppose this principle:
-
- - Rigidity and tight coupling violating the Open/Closed principle
- - Fragility if deep inheritance comes into play
- - Harder unit test developer experience
- - ORM issues due to eventual "unexpected internal state changes"
- - Eventual concurrency challenges, also due to internal state change.
-
+    * Rigidity and tight coupling violating the Open/Closed principle
+    * Fragility if deep inheritance comes into play
+    * Harder unit test developer experience
+    * ORM issues due to eventual "unexpected internal state changes"
+    * Eventual concurrency challenges, also due to internal state change.
 * A possible compromise, would be the following: keep using dumb `struct` like *POXO* objects, yet, implement encapsulated "services" which know how to validate, mutate and utilize those simple objects the right way.
