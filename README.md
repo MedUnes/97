@@ -290,3 +290,15 @@ critical team conflicts..
 > [!tip]  
 > Slow down, beware of arrogance and premature claims of seniority. Being rude to domain experts suggests a 0.01% chance you're a genius and a 99.99% chance you're foolishly risking an early career setback."
 
+### 32- Hard Work Does Not Pay Off (Olve Maudal)
+* Overworking doesn't necessarily lead to career advancement, personal development, productivity, or success.
+* True growth stems from effectively utilizing your free time in activities like workshops, conferences, reading, and networking.
+> Act like a professional: prepare, effect, observe, reflect, and change.
+
+> [!tip]  
+> However, there are two exceptions to this rule: Firstly, if your job already involves activities you'd typically reserve for free time, such as working on innovative projects in a startup environment. This can provide ample opportunities for personal growth. Secondly, tackling challenging tasks like bug fixing can often be more enriching than attending numerous leisurely conferences. Striking a balance between these two approaches is key.
+
+
+
+
+
