@@ -266,3 +266,17 @@ critical team conflicts..
 * Another trap, konw as the **smearing problem** happens when the difference in scale between the numbers is too great, the smaller number might not affect the total at all. This can lead to inaccuracies in calculations where you expect these small additions to make a difference. the floating point representation can't accurately capture the small change, and over time, these inaccuracies accumulate and might diverge to infinity.
 * As these errors might be devastating in contexts such as finance, it makes always sense to rely on dedicated decimal classes almost every popular programming language has. Even if your own implementations might be more effecient:
 > efficiency is worthless without accuracy.
+
+### 29 Fulfill Your Ambitions with Open Source (Richard Monson-Haefel)  :+1: :+1:
+* "Cutting-edge technologies, green-field projects, best practices, and world-valuable solutions fulfilling your beliefs? Unfortunately, the majority of the daily work of software developers does not adhere to their dreams. Instead, they wake up in the morning to monitor yesterday's releases or fix a couple of bugs and write corresponding unit tests.
+
+* What's the escape? Open Source. Besides the high probability of finding your tailor-made project for maximum enthusiasm, open-source projects can offer you the following benefits:
+
+    * Leave your fingerprint on world-class projects.
+    * Learn from the world's best developers and gain deeper insights into the culture of your favorite tech stack community.
+    * Make valuable friends for fun and profit.
+* Everything good comes with a price: you might need to be prepared for a few commitments, such as sacrificing some of your free time for free, or starting the journey by writing unit tests or documentation for your beloved open-source project."
+
+
+
+
