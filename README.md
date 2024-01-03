@@ -267,7 +267,7 @@ critical team conflicts..
 * As these errors might be devastating in contexts such as finance, it makes always sense to rely on dedicated decimal classes almost every popular programming language has. Even if your own implementations might be more effecient:
 > efficiency is worthless without accuracy.
 
-### 29 Fulfill Your Ambitions with Open Source (Richard Monson-Haefel)  :+1: :+1:
+### 29 Fulfill Your Ambitions with Open Source (Richard Monson-Haefel) :+1: :+1:
 * "Cutting-edge technologies, green-field projects, best practices, and world-valuable solutions fulfilling your beliefs? Unfortunately, the majority of the daily work of software developers does not adhere to their dreams. Instead, they wake up in the morning to monitor yesterday's releases or fix a couple of bugs and write corresponding unit tests.
 
 * What's the escape? Open Source. Besides the high probability of finding your tailor-made project for maximum enthusiasm, open-source projects can offer you the following benefits:
@@ -277,6 +277,16 @@ critical team conflicts..
     * Make valuable friends for fun and profit.
 * Everything good comes with a price: you might need to be prepared for a few commitments, such as sacrificing some of your free time for free, or starting the journey by writing unit tests or documentation for your beloved open-source project."
 
+### 30- The Golden Rule of API Design (Michael Feathers) :+1: :+1:
+* APIs (not Web APIs, but rather public vendor packages) should be treated as very special code base.
+* Writing curated unit tests is crucial, mandatory but, unfortunately, not enough.
+* "Locking" your classes with ant-inheritance language keywords (```final```, ```static```, ```sealed```) is also good but not enough.
+* The golden rule here is to "impersonate" you API's user and see if you would encounter problems while using it the weirdest way. How can we guess those strange use cases: Unit Tests!
+> It’s not enough to write tests for an API you develop; you have to write unit tests for code that uses your API.
 
-
+### 31- The Guru Myth (Ryan Brush) :+1:
+* A Guru is someone who has dedicated years to analyzing and solving problems. They likely possess high intellectual abilities and immense enthusiasm. However, they are not magicians. When seeking their support, provide detailed information and possibly suggest solutions.
+* Moreover, elevating experts to a 'Guru' status can harm the industry by creating an image of untouchable idols.
+> [!tip]  
+> Slow down, beware of arrogance and premature claims of seniority. Being rude to domain experts suggests a 0.01% chance you're a genius and a 99.99% chance you're foolishly risking an early career setback."
 
