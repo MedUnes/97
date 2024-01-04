@@ -317,7 +317,7 @@ Install Me Marcus Baker
 
 > if the tutorial mentions my problem, I’ll cheer up.
 
-### 36- Interprocess Communication Affects Application Response Time (Randy Stafford) :+1:
+### 36- Interprocess Communication Affects Application Response Time (Randy Stafford) :+1: :+1:
 * What's the problem with slow software?
 > We feel as if the software is wasting our time and affecting our productivity.
 
@@ -328,3 +328,16 @@ Install Me Marcus Baker
 * Ways to improve IPC-to-stimilus ratio: parsimony, concurrency and caching. Additionally, never take your framework and/or vendor solutions as granted specially if they are involved in IPC ( you there ORM, I see you..)
 > [!tip]  
 > Running clean code on a dirty machine is like serving healthy food in an infected dish.
+
+### 37- Keep the Build Clean (Johannes Brodwall) :+1:
+* Zero Tolerance for Build Warnings: Enforce a strict policy where the build process must complete without any warnings. This is non-negotiable and crucial for maintaining code quality.
+* Team Consensus on Warning Relevance: If you believe certain warnings are irrelevant, don't ignore them silently. Instead, bring them up for discussion with your team. Upon agreement, these warnings can be explicitly disabled in the build rules.
+* Preventing Codebase Degradation: Adhering to this approach aligns with the principles of the [Broken Windows Theory](https://en.wikipedia.org/wiki/Broken_windows_theory). It emphasizes that overlooking minor issues (like build warnings) can lead to a gradual decline in standards, eventually resulting in significant deterioration of the codebase. By maintaining strict standards from the onset, the overall quality and integrity of the code are preserved.
+
+### 38- Know How to Use Command-Line Tools (Carroll Robinson) :+1:
+* While GUI tools like IDE plugins are convenient, they can become dependencies that limit deeper understanding. It's important to recognize that many functions they provide can be effectively performed using command-line tools such as grep, sort, and Makefiles. Trying out these CLI tools can be a valuable first step before relying on GUI 'black boxes.'
+
+* After gaining experience with command-line interfaces, you'll be in a better position to choose between continuing with CLI or returning to GUI tools. Even if you opt for GUI, your CLI experience will give you a deeper understanding of the processes involved.
+
+> [!tip]  
+> This approach aligns with the Japanese martial arts principle of [Shuhari (守破離)](https://fr.wikipedia.org/wiki/Shuhari), emphasizing the journey from adhering to traditional practices (Shu), to breaking away (Ha), and finally to transcending (Ri).
