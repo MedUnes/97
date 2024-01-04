@@ -298,6 +298,33 @@ critical team conflicts..
 > a bug is not a standard unit of work any more than a line of code is a precise measurement of effort.
 
 ### 33- Improve Code by Removing It (Pete Goodliffe) :+1:
-* If your codebase is backed by a solid test suite, involve your Project Manager and remove all unnecessary features.
-* What? does production code contain unnecessary features? Very likely, yes! Legacy code often accumulates irrelevant features that breach the YAGNI principle, cluttering the production code.
+* If your codebase is backed by a solid test suite, involve your Project Manager in couple sessions for a removal of all unnecessary features. Yes, Legacy code often accumulates irrelevant YAGNI breaches..
+
 > One of my most productive days was throwing away 1000 lines of code. (Ken Thompson)
+Install Me Marcus Baker
+
+### 34- Install Me (Marcus Baker) :+1:
+* When launching products, ensure your landing page is concise and direct.
+* You typically have a brief window, around three seconds, to convince visitors that your product addresses their needs, not yours. 
+* Any hint of dishonesty, like pushing unwanted downloads, spamming emails, or deceptive practices, can lead to permanent distrust. The customer might not only reject your product but also spread negative feedback or even write a critical blog post.
+
+> if the tutorial mentions my problem, I’ll cheer up.
+
+### 35- Install Me (Marcus Baker) :+1:
+* When launching products, ensure your landing page is concise and direct.
+* You typically have a brief window, around three seconds, to convince visitors that your product addresses their needs, not yours. 
+* Any hint of dishonesty, like pushing unwanted downloads, spamming emails, or deceptive practices, can lead to permanent distrust. The customer might not only reject your product but also spread negative feedback or even write a critical blog post.
+
+> if the tutorial mentions my problem, I’ll cheer up.
+
+### 36- Interprocess Communication Affects Application Response Time (Randy Stafford) :+1:
+* What's the problem with slow software?
+> We feel as if the software is wasting our time and affecting our productivity.
+
+* Avoid getting overly absorbed in minor, abstract software design details while chasing perfect performance.
+* Always remember that your clean-code runs on a machine and an operating system.
+* Speed bottlenecks can arise from external sources like databases, third-party web APIs, or storage services.
+* Although you can't alter the internals of these external systems, you often have control over how you manage data transmission to and from them: caching, batching, smart-fetching..
+* Ways to improve IPC-to-stimilus ratio: parsimony, concurrency and caching. Additionally, never take your framework and/or vendor solutions as granted specially if they are involved in IPC ( you there ORM, I see you..)
+> [!tip]  
+> Running clean code on a dirty machine is like serving healthy food in an infected dish.
