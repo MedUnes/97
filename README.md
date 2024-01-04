@@ -147,17 +147,7 @@ all participants
 * Avoid aggressive, arrogant and sarcastic comments. Use suggestions, questions, arguments instead.
 * Watch-out: a general failure in the code-review process can have severe impact on productivity, or even trigger more
 critical team conflicts..
-### 15- Code Reviews  (Mathias Karlsson) :+1:
-* Unless strictly required by some compliance rules, code review should be peer to peer rather than superior to peers.
-* The reviewer's goal should be "understand the committed code and the coder's intention" rather than spotting issues.
-* The ultimate keyword for code reviews is **knowledge sharing**. Remember that, always, please!
-* Set up a diverse strategy where juniors review based on their academic and fresh theoretical background, while seniors
-review from their experience and pragmatic perspective. This ensures knowledge-sharing, enthusiasm and smoothness for 
-all participants
-* Avoid aggressive, arrogant and sarcastic comments. Use suggestions, questions, arguments instead.
-* Watch-out: a general failure in the code-review process can have severe impact on productivity, or even trigger more
-critical team conflicts..
-### 16- A comment on comments  (Cal Events) :+1: :+1:
+### 15- A comment on comments  (Cal Events) :+1: :+1:
 * Comments are not evil, they are very welcome, they are first class citizens in the world of programming.
 * Do not surrender to indoctrinations of the notoriety of comments. Use them as much as you want as long as you keep explaining your code to yourself and to future programmers coming across it.
 * This might sound like a "devil's advocate PoV", if you are do belong to the "clean code" team. The two quotes below are very clear about this:
@@ -165,7 +155,7 @@ critical team conflicts..
 
 > The proper use of comments is to compensate for our failure to express ourself in code. Note that I used the word failure. I meant it. Comments are always failures. - *Uncle Bob*
 
-### 17- Comment only what the code cannot say  (Kevlin Henney) :+1:
+### 16- Comment only what the code cannot say  (Kevlin Henney) :+1:
 * Unless literally deleted, comments are non-refactorable tech debt and kind of resident flaws that nor compilers neither linters can fix.
 * Oppposed to what they were meant to be useful for, comments won't communicate more info for two reasons:
   * The developer's mind flags them as "ambiguous" then systematically puts them under "ignored crap".
@@ -173,26 +163,26 @@ critical team conflicts..
 * Write comments if, and only if, you can't replace them by real code. (A rephrasal of "Comment the *why*, not the *what*)
   > Comment what the code cannot say,not simply what it does not say.
 
-### 18- Continous Learning (Clint Shank) :+1:
+### 17- Continous Learning (Clint Shank) :+1:
 * Continous learning is good, in software engineering is a must, else you risk your job as the change is fast and the competition is high.
 * There are two styles of learning: passive (blogs, mentors, conferences) and active (teaching, coding, blogging)
 * A good way to stand out from the crowd, is to dig deeper and deeper your favourite tech-stack, debug and read the source code, up to the point it becomes naked and the magic fades away. The more magic it looks like, the more learning you need.
 
-### 19- Convenience Is Not an -ility (Gregor Hohpe) :+1:
+### 18- Convenience Is Not an -ility (Gregor Hohpe) :+1:
 * API is composed of two parts: *"Application Programming"* and *"Interface"*. Your focus should be balanced towards the second part.
 * What makes API different from "normal code" it is built to be used by other programmers in other programs.
 * You should opt for code that is self-explanatory, optimally without the documentation. Repetition and couple more lines of code shouldn't be a problem in favor of a better DX (Developer Eperience).
 * In this context, if you face a trade-off situtation of convenience vs efficiency, convenience vs consistency, or convenience vs elegance, go convenience!
 * Take your time, writing an API is like raising a child, you don't usually get a second chance for it.
 
-### 20- Deploy Early and Often (Steve Berczuk) :+1:
+### 19- Deploy Early and Often (Steve Berczuk) :+1:
 * Deployable production environment should come first and certainly not last.
 * Releasing to production is not a magic that "those devops" bring to life over night. It should be a part of the development task itself including estimation, refinement, planning, and testing.
 * Progressing for a long time on the local environment without any iterations on the production one can end up with bad surprises.
 * Sometimes it is too late to fix deep code issues caused by accumulated wrong assumptions about the non-ready production.
 * If someone argues about the business value of a production environment preparation, just tell them that the business value only runs on production.
 
-### 21 Don't Ignore That Error (Pete Goodliffe) :+1:
+### 20- Don't Ignore That Error (Pete Goodliffe) :+1:
 * Ignoring errors under known developers excuses (tough deadline, it won't happen, To Do..) can lead to:
   * Security Issues (the error state is the entrypoint)
   * Ugly code to shut up the error
@@ -206,17 +196,17 @@ critical team conflicts..
 
   > Unless explicitly silenced.
 
-### 22 Don’t Just Learn the Language, Understand Its Culture (Anders Norås) :+1:
+### 21- Don’t Just Learn the Language, Understand Its Culture (Anders Norås) :+1:
 * Assuing that nowadays, it is possible to solve almost any programming problem in any programming langauge, why should we learn new langauges?
 * The answer is: it is not only about the language, it is about the culture. Yes you can write complete Java application with zero classes and zero interfaces, in a procedural C way, but, why would you?
 * If you learn a new language, do not loose its gem: seeing the world with that languages "eyes".
   > It takes more than just learning the syntax to learn a language: you need to understand its culture
   
-### 23 Don’t Nail Your Program into the Upright Position (Verity Stob) :+1:
+### 22- Don’t Nail Your Program into the Upright Position (Verity Stob) :+1:
 * Choking your program with dozens if *try .. catch* and similar error muters is like hiding cancer with tons of painkillers.
 * Write consistent and useful error handlers or avoid that thing completely. Doing it wrong will make you suffer twice: fixing the error handler and fix the error.
 
-### 24 Don’t Rely on “Magic Happens Here” (Alan Griffiths) :+1:
+### 23- Don’t Rely on “Magic Happens Here” (Alan Griffiths) :+1:
 > [!tip]  
 > * The word *magic* here is a good example of the Clarke's third law
 
@@ -230,19 +220,19 @@ critical team conflicts..
 
   >  You don’t have to understand all the magic that makes your project work, but it doesn’t hurt to understand some of it— or to appreciate someone who understands the bits you don’t.
 
-### 25 Don’t Repeat Yourself (Steve Smith) :+1: :+1:
+### 24- Don’t Repeat Yourself (Steve Smith) :+1: :+1:
 * Don’t Repeat Yourself (DRY) is probably the most fundamental of all fundamental programming rules.
 * We know the **S****O**LID principles. There would be no **S**ingle Responsibility Principle without *DRY*, as duplication will definitely lead to more than one cause to change the code unit. There would also be no **O**pen/Closed principle without *DRY*, as duplication will force any module to be open for modifications.
 * There might be situtations when you can trade off DRY for more crucial requirements such as performance and scaling (data redundancy through DB denormalization). The need must be real so that the trade-off makes sense.
 > [!tip]  
 > * However, the DRY principle might be in some situations under double check, specially when we oppose it to other principles such as [The rule of three](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)) or the *"Duplication is far cheaper than the wrong abstraction"* principle. Briefly said, DRY will require some kind of abstraction under which the duplication hides, and abstraction requires a certain level of accuracy and expertise so that it can handle the repeated cases without the need to handle missing ones with nasty conditions. There is no free lunch!
 
-### 27 Don’t Touch That Code! (Cal Evans) :+1:
+### 25- Don’t Touch That Code! (Cal Evans) :+1:
 * Developers should **NEVER** do any manual changes on any environment except their local ones. Moreover, they should never have access to production servers, even in situations where a very urgent hotfix is required.
 > [!tip]  
 > * This rule is good to follow, no doubt. However, it comes with costs and needs dedicated manpower and resources, and many companies/startups can't afford that luxury and keep relying on grey areas and shared responsibilities. It is when you grow to big enough company that fine grained responsibilities and stricter border lines are the very welcome.
 
-### 27 Encapsulate Behavior, Not Just State (Einar Landre) :+1: :+1:
+### 26- Encapsulate Behavior, Not Just State (Einar Landre) :+1: :+1:
 
 * "Object Zero" (~ Coke Zero) is the trend nowadays, yet, Einar Landre warns us that combining logic and state changes in the same class isn't bad, but rather the standard.  He literally wrote:
   
@@ -260,14 +250,14 @@ critical team conflicts..
 > [!tip]  
 > A possible compromise, would be the following: keep using dumb `struct` like *POXO* objects, yet, implement encapsulated "services" which know how to validate, mutate and utilize those simple objects the right way.
 
-### 28 Floating-Point Numbers Aren’t Real (Chuck Allison) :+1: :+1: :+1:
+### 27- Floating-Point Numbers Aren’t Real (Chuck Allison) :+1: :+1: :+1:
 * *infinitesimal* is an abstract math concept that doesn't exist in the machine's world. The "smallest" unit is known as the *machine epsilon* defined by: ```ɛ = 2^(1-p), where p is the precision (24 for float, 53 for double)```
 * Keeping this in mind is important when trying to find an acceptable small enough value for equations, else you'll loop forver in vain!
 * Another trap, konw as the **smearing problem** happens when the difference in scale between the numbers is too great, the smaller number might not affect the total at all. This can lead to inaccuracies in calculations where you expect these small additions to make a difference. the floating point representation can't accurately capture the small change, and over time, these inaccuracies accumulate and might diverge to infinity.
 * As these errors might be devastating in contexts such as finance, it makes always sense to rely on dedicated decimal classes almost every popular programming language has. Even if your own implementations might be more effecient:
 > efficiency is worthless without accuracy.
 
-### 29 Fulfill Your Ambitions with Open Source (Richard Monson-Haefel) :+1: :+1:
+### 28- Fulfill Your Ambitions with Open Source (Richard Monson-Haefel) :+1: :+1:
 * "Cutting-edge technologies, green-field projects, best practices, and world-valuable solutions fulfilling your beliefs? Unfortunately, the majority of the daily work of software developers does not adhere to their dreams. Instead, they wake up in the morning to monitor yesterday's releases or fix a couple of bugs and write corresponding unit tests.
 
 * What's the escape? Open Source. Besides the high probability of finding your tailor-made project for maximum enthusiasm, open-source projects can offer you the following benefits:
@@ -277,20 +267,20 @@ critical team conflicts..
     * Make valuable friends for fun and profit.
 * Everything good comes with a price: you might need to be prepared for a few commitments, such as sacrificing some of your free time for free, or starting the journey by writing unit tests or documentation for your beloved open-source project."
 
-### 30- The Golden Rule of API Design (Michael Feathers) :+1: :+1:
+### 29- The Golden Rule of API Design (Michael Feathers) :+1: :+1:
 * APIs (not Web APIs, but rather public vendor packages) should be treated as very special code base.
 * Writing curated unit tests is crucial, mandatory but, unfortunately, not enough.
 * "Locking" your classes with ant-inheritance language keywords (```final```, ```static```, ```sealed```) is also good but not enough.
 * The golden rule here is to "impersonate" you API's user and see if you would encounter problems while using it the weirdest way. How can we guess those strange use cases: Unit Tests!
 > It’s not enough to write tests for an API you develop; you have to write unit tests for code that uses your API.
 
-### 31- The Guru Myth (Ryan Brush) :+1:
+### 30- The Guru Myth (Ryan Brush) :+1:
 * A Guru is someone who has dedicated years to analyzing and solving problems. They likely possess high intellectual abilities and immense enthusiasm. However, they are not magicians. When seeking their support, provide detailed information and possibly suggest solutions.
 * Moreover, elevating experts to a 'Guru' status can harm the industry by creating an image of untouchable idols.
 > [!tip]  
 > Slow down, beware of arrogance and premature claims of seniority. Being rude to domain experts suggests a 0.01% chance you're a genius and a 99.99% chance you're foolishly risking an early career setback."
 
-### 32- Hard Work Does Not Pay Off (Olve Maudal)
+### 31- Hard Work Does Not Pay Off (Olve Maudal) :+1: :+1:
 * Overworking doesn't necessarily lead to career advancement, personal development, productivity, or success.
 * True growth stems from effectively utilizing your free time in activities like workshops, conferences, reading, and networking.
 > Act like a professional: prepare, effect, observe, reflect, and change.
@@ -298,7 +288,16 @@ critical team conflicts..
 > [!tip]  
 > However, there are two exceptions to this rule: Firstly, if your job already involves activities you'd typically reserve for free time, such as working on innovative projects in a startup environment. This can provide ample opportunities for personal growth. Secondly, tackling challenging tasks like bug fixing can often be more enriching than attending numerous leisurely conferences. Striking a balance between these two approaches is key.
 
+### 32- How to Use a Bug Tracker (Matt Doar) :+1:
+* A bug report says something about the reporter's seniority and "developer's honor", so do it well.
+* Your bug report should follow the *What/Why/How* pattern:
+  * What happened (context, data, dumps..)
+  * Why it happened (your two cents about the root cause)
+  * How it happened: the reproduction scenario
+    
+> a bug is not a standard unit of work any more than a line of code is a precise measurement of effort.
 
-
-
-
+### 33- Improve Code by Removing It (Pete Goodliffe) :+1:
+* If your codebase is backed by a solid test suite, involve your Project Manager and remove all unnecessary features.
+* What? does production code contain unnecessary features? Very likely, yes! Legacy code often accumulates irrelevant features that breach the YAGNI principle, cluttering the production code.
+> One of my most productive days was throwing away 1000 lines of code. (Ken Thompson)
