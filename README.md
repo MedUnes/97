@@ -376,3 +376,21 @@ Install Me Marcus Baker
 * SQL simplifies data manipulation and querying, supports declarative constraints for data integrity, and allows easy scaling and multi-language development.
 > [!tip]  
 > RDBMS aren't a free ride. Understand their mechanics, study the vendor docs, and grasp their limitations. Also, using YAML or JSON files could suit your MVP better before you truly require an RDBMS.
+
+### 44- Learn Foreign Languages (Klaus Marquardt) :+1:
+* Besides the "Machine language", programmers are encouraged to learn couple "foreign languages":
+    * Their mother tongue: be fluent in it.
+    * Foreign human spoken languages
+    * Domain Specific Languages (DSL) of the stakeholdes: Marketing, Legal, and  Sales jargons
+
+> [!tip]  
+> When you hit a plateau in your technical skills, mastering soft skills becomes key for your growth.
+
+### 45- Learn to Estimate (Giovanni Asproni) :+1:
+* Often, managers confuse estimates with commitments, leading to unrealistic project expectations; understanding and clarifying these concepts is crucial for project success.
+
+> [!tip]  
+> Again, Scrum is your way to go. Adhering to [Rough Order of Magnitude (ROM)](https://project-management.info/rom-rough-order-of-magnitude/) such as [Fibonacci Sizing](https://www.scrum.org/resources/blog/practical-fibonacci-beginners-guide-relative-sizing) or T-Shirt Sizing are good techniques to separate commitments from estimates.
+
+> “The primary purpose of software estimation is not to predict a project’s outcome; it is to determine whether a project’s targets are realistic enough to allow the project to be controlled to meet them.” (Steve McConnell)
+
