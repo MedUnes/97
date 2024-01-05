@@ -341,3 +341,38 @@ Install Me Marcus Baker
 
 > [!tip]  
 > This approach aligns with the Japanese martial arts principle of [Shuhari (守破離)](https://fr.wikipedia.org/wiki/Shuhari), emphasizing the journey from adhering to traditional practices (Shu), to breaking away (Ha), and finally to transcending (Ri).
+
+### 39- Know Well More Than Two Programming Languages (Russel Winder) :+1:
+* Mastering various programming paradigms enhances expertise.Diverse languages offer unique problem-solving approaches.
+* Exploring different programming languages, even while primarily using one in your daily work, provides a unique perspective on problem-solving that's not typically available to those accustomed to a single-language ecosystem.
+
+> cross-fertilization is at the core of expertise
+
+### 40- Know Your IDE (Heinz Kabutz) :-1:
+* The evolution of programming environments: From basic text editors in the 1980s to modern Integrated Development Environments (IDEs) with advanced features like automated refactoring and style rule enforcement, highlighting the ease of use but also the risk of not fully mastering these tools.
+
+### 41- Know Your Limits (Greg Colvin) :+1: :+1:
+* Recognizing the orders of magnitude in machine-level access times and capacities is crucial. Coupled with an understanding of abstract time/space complexity, it safeguards against inadvertently making poor design choices. Always remeber: infinite resources do only exist in theoretical computer science books.
+
+| Storage     | Access time | Capacity |
+|-------------|-------------|----------|
+| Register    | < 1 ns      | 64 b     |
+| Cache line  |             | 64 B     |
+| L1 cache    | 1 ns        | 64 KB    |
+| L2 cache    | 4 ns        | 8 MB     |
+| RAM         | 20 ns       | 32 GB    |
+| Disk        | 10 ms       | 10 TB    |
+| LAN         | 20 ms       | > 1 PB   |
+| Internet    | 100 ms      | > 1 ZB   |
+
+> Complexity analysis is measured in terms of an abstract machine, but software runs on real machines.
+
+### 42- Know Your Next Commit Dan (Bergh Johnsson) :+1:
+* Clear, incremental tasks prevent speculative coding, unlike vague, larger tasks that risk poor commits.
+> [!tip]  
+> Adhering to strict Scrum rules will make you definitely know your next commit very well.
+
+### 43- Large, Interconnected Data Belongs to a Database (Diomidis Spinellis) :+1:
+* SQL simplifies data manipulation and querying, supports declarative constraints for data integrity, and allows easy scaling and multi-language development.
+> [!tip]  
+> RDBMS aren't a free ride. Understand their mechanics, study the vendor docs, and grasp their limitations. Also, using YAML or JSON files could suit your MVP better before you truly require an RDBMS.
