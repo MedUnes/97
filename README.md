@@ -394,3 +394,21 @@ Install Me Marcus Baker
 
 > “The primary purpose of software estimation is not to predict a project’s outcome; it is to determine whether a project’s targets are realistic enough to allow the project to be controlled to meet them.” (Steve McConnell)
 
+### 46- Let Your Project Speak for Itself (Daniel Lindner) :+1: :+1:
+* [Extreme Feedback Devices](https://www.linkedin.com/pulse/extreme-feedback-devices-xfd-thomas-hartmann/) could actually be a good idea:
+  * Being fun and creative, it can bring motivation and empower team building
+  * Ensure end customers use stable products and get notified in real life about any inconveniences.
+
+> [!tip]  
+> On the long run, XFD might have negative impacts on developers minds.  
+> Developers need frequent breaks from the digital world's stress to the peace of the real world (coffee, walk, ping-pong), while XFD will only build a permanent joint between the two worlds. 
+
+### 47- The Linker Is Not a Magical Program (Walter Bright) :-1:
+* A linker is not a magician, rather a relatively simple program achieving the following: concatenating object files, resolving symbol references, and generating executables, often confused due to complex file formats.
+
+### 48- The Longevity of Interim Solutions (Klaus Marquardt) :+1 :+1: :+1:
+
+* Interim projects usually meet stakeholder expectations, reducing the likelihood of revisions or upgrades unless mandated by rigorous quality standards. 
+* As a developer, it's often more practical to avoid overexerting yourself on these projects unless you possess the necessary authority to make significant changes.
+
+> May you be granted the serenity to accept the things you cannot change, the courage to change the things you can, and the wisdom to know the difference
