@@ -357,7 +357,6 @@ Install Me Marcus Baker
 | Storage     | Access time | Capacity |
 |-------------|-------------|----------|
 | Register    | < 1 ns      | 64 b     |
-| Cache line  |             | 64 B     |
 | L1 cache    | 1 ns        | 64 KB    |
 | L2 cache    | 4 ns        | 8 MB     |
 | RAM         | 20 ns       | 32 GB    |
