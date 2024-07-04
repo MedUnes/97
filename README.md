@@ -411,3 +411,24 @@ Install Me Marcus Baker
 * As a developer, it's often more practical to avoid overexerting yourself on these projects unless you possess the necessary authority to make significant changes.
 
 > May you be granted the serenity to accept the things you cannot change, the courage to change the things you can, and the wisdom to know the difference
+
+### 49- Make the Invisible More Visible (Jon Jagger) 👍
+> Software and the process of developing it can be, to paraphrase Douglas Adams, *mostly invisible*
+
+* Living under the shadow can seriously endanger the lifecycle of software development for both developers and stakeholders.
+
+* Failing to meet deadlines or expectations can be hard to justify, especially when the unexpected results are caused by the typical "bug-fixing" capacity blackholes.
+
+* Developers should aim for transparency in communicating progress and blockers in real time to avoid the consequences of eventual invisibility.
+
+> [!tip]  
+> Following modern/de facto software engineering best practices on both the technical side (testing, CI/CD, code reviews, etc.) and management side (Agile) will empirically save you from all the "invisible syndrome" effects without you even being aware of it.
+
+### 50- Message Passing Leads to Better Scalability in Parallel Systems (Russel Winder) 👍 👍
+
+* When it comes to concurrency and parallelism shared memory is the mother of all sins: race conditions, deadlocks and all the crew.
+*Embracing message passing and process models offers a radical solution to these problems. However, as long as mainstream programming languages like C, C++, and Java dominate system programming, developers will continue grappling with the pitfalls of shared memory.
+
+> [!tip]  
+> Nowadays, Rust stands out as a system programming language that effectively addresses these issues, demonstrating its prowess in modern computing environments.
+
