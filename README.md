@@ -432,3 +432,16 @@ Install Me Marcus Baker
 > [!tip]  
 > Nowadays, Rust stands out as a system programming language that effectively addresses these issues, demonstrating its prowess in modern computing environments.
 
+### 51- A Message to the Future (Linda Rising) 👍👎
+
+* "*Smart Developers Syndrome*": This refers to the tendency of some developers to overcomplicate solutions in order to impress others. Not only is this approach detrimental, but it also complicates collaboration within software development teams. As you delve deeper into the field of software engineering, you'll find how much the *KISS* principle (Keep It Simple Stupid) is valued among community members.
+
+> [!tip]  
+> "Simplicity is the ultimate sophistication." (Leonardo da Vinci)
+
+### 52- Missing Opportunities for Polymorphism (Kirk Pepperdine) 👎
+
+> [!tip]  
+> In the context of *OOP*, this equation is always valid:
+> 
+>      `if..then..else + logic switch = interfaces + strtegy pattern` 
