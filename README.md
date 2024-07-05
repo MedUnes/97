@@ -444,4 +444,4 @@ Install Me Marcus Baker
 > [!tip]  
 > In the context of *OOP*, this equation is always valid:
 > 
->      `if..then..else + logic switch = interfaces + strtegy pattern` 
+>      `logic switch + object type --> interfaces + strtegy pattern` 
