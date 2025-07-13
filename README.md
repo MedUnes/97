@@ -1,5 +1,5 @@
 <h1 align="center">
-    The annotated 97 <br>
+    The Annotated 97 <br>
 </h1>
 
 <div align="center">
