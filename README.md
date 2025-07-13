@@ -4,8 +4,6 @@
 
 <div align="center">
 
-<img src="https://github.com/medunes/97/blob/master/logo.jpg" width="200" href="https://www.amazon.com/Things-Every-Programmer-Should-Know/dp/0596809484/ref=sr_1_1?keywords=97+things+every+programmer+should+know">
-
 </div>
 
 [![Author](https://img.shields.io/badge/author-@medunes-blue.svg?style=flat-square)](https://twitter.com/medunes2)
